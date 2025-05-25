@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis datos</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Opcional: para estilos externos -->
 </head>
 <body>
-    
+    <header>
+        <h1>Bienvenido a Cursos de Programacion</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
- <?php
- $nombre="Ray Cristhoper";
- $apellido="Bonilla Muñoz";
- $edad="34 años";
- $sueldo=5500.23;
- //proceso
- $cont=$nombre." ".$apellido;
- //salida
- echo "<h1>Mis datos son: </h1>".$cont;
- //4 variables de forma libre, luego mostrar cada variable
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Curso de Programacion.</p>
+        </section>
 
- $moto="ktm";
- $precio=20000;
- $modelo="deportiva";
- $color="azul";
- //proceso
- $cont=$moto." ".$precio;
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Diversos Lenjueages de Programacion.</p>
+        </section>
 
- echo"<h1>precio de la moto: </h1>".$precio;
- echo"<h2>modelo de la moto: </h2>".$modelo;
- echo"<h3>color de la moto: </h3>".$color;
- echo"<h4>veiculo: </h4>".$precio;
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
 
- echo"<h1>hola soy ray y vengo a comprar una moto ".$moto." que sea de color ".$color." azul y de preferencia de modelo ".$modelo."
- pueden darme un descuent ya que el precio de ".$precio." soles es muy elevado para mi presupuesto";
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
 
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 
-
-
-?>
-
-
+    <footer>
+        <p>&copy; 2025 Ray Bonilla. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
